@@ -1,0 +1,37 @@
+// Copy this file to amplifyconfiguration.dart and fill in your Cognito values.
+// Run `amplify init && amplify add auth && amplify push` to generate this automatically.
+
+const amplifyconfig = '''{
+  "UserAgent": "aws-amplify-cli/2.0",
+  "Version": "1.0",
+  "auth": {
+    "plugins": {
+      "awsCognitoAuthPlugin": {
+        "UserAgent": "aws-amplify-cli/2.0",
+        "Version": "1.0",
+        "IdentityManager": {
+          "Default": {}
+        },
+        "CognitoUserPool": {
+          "Default": {
+            "PoolId": "YOUR_USER_POOL_ID",
+            "AppClientId": "YOUR_APP_CLIENT_ID",
+            "Region": "YOUR_REGION"
+          }
+        },
+        "Auth": {
+          "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "passwordProtectionSettings": {
+              "passwordPolicyMinLength": 8,
+              "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OPTIONAL",
+            "mfaTypes": ["SMS", "TOTP"],
+            "verificationMechanisms": ["EMAIL"]
+          }
+        }
+      }
+    }
+  }
+}''';
