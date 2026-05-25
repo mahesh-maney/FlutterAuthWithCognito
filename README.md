@@ -8,13 +8,25 @@ A Flutter application demonstrating enterprise-grade authentication using AWS Co
 
 ### Sign In
 <p align="center">
-  <img src="screenshots/login_screen.png" width="250" alt="Login Screen"/>
+  <img src="screenshots/login_screen.png" width="260" alt="Login Screen"/>
 </p>
 
-### TOTP Setup (QR Code)
+---
+
+### MFA — TOTP Setup & Challenge
+
 <p align="center">
-  <img src="screenshots/totp_setup.png" width="250" alt="TOTP QR Code Setup"/>
+  <img src="screenshots/totp_setup.png" width="260" alt="TOTP Setup (manual key)"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="screenshots/mfa_challenge.png" width="260" alt="TOTP Challenge"/>
 </p>
+<p align="center">
+  <b>Setup (enter secret key into authenticator app)</b>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Challenge (enter 6-digit code after sign-in)</b>
+</p>
+
+---
 
 ### Role-Based Home Screens
 
@@ -26,11 +38,11 @@ A Flutter application demonstrating enterprise-grade authentication using AWS Co
   <img src="screenshots/home_user.png" width="250" alt="Basic User Home"/>
 </p>
 <p align="center">
-  <b>Admin</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Manager</b>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>User</b>
+  <b>Admin</b> — Dashboard + Team Management + Admin Panel
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Manager</b> — Dashboard + Team Management
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>User</b> — Dashboard only
 </p>
 
 ---
